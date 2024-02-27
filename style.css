@@ -1,7 +1,24 @@
-body{
+html {
+    font-size: 62.5%
+}
+
+:root {
+    --button-color: #aac844;
+}
+
+body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
 }
 
-h1{
-    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;;
+h1 {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-weight: normal;
+}
+
+p {
+    text-indent: 30px;
+}
+
+button {
+    color: var(--button-color);
 }
