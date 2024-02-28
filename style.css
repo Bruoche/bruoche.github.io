@@ -69,7 +69,6 @@ header nav a {
 .parallax {
     perspective: 1px;
     height: 100vh;
-    overflow-x: hidden;
     overflow-y: auto;
 }
 
@@ -87,12 +86,10 @@ header nav a {
 }
 
 .parallax__layer--back {
+    top: 25vh;
     transform: translateZ(-1px) scale(2);
-    color: white;
-}
-
-.parallax__layer--back h1 {
     margin-left: 80px;
+    color: white;
 }
 
 .parallax__layer--deep {
