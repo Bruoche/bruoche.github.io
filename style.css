@@ -71,6 +71,7 @@ header nav a {
     perspective: 1px;
     height: 100vh;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .parallax__layer {
