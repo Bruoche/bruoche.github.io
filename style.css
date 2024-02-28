@@ -55,6 +55,20 @@ header nav a {
     margin-top: 10px;
 }
 
+
+.title_card img {
+    display: block;
+    width: 100%;
+}
+
+.title_card h1 {
+    position: absolute;
+    text-align: left;
+    top: 0;
+    left: 80px;
+    color: white;
+}
+
 .content {
     padding: 40px;
     background-color: white;
@@ -86,14 +100,14 @@ header nav a {
 }
 
 .parallax__layer--back {
-    top: 100vh;
     transform: translateZ(-1px) scale(2);
-    width: 100%;
     color: white;
 }
 
 .parallax__layer--deep {
     transform: translateZ(-2px) scale(3);
+    width: 100%;
+    margin: 0;
 }
 
 .part {
