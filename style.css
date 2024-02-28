@@ -35,6 +35,7 @@ button {
     border-radius: 5px;
     padding: 10px;
     font-size: 2rem;
+    color: white;
 }
 
 header {
@@ -43,7 +44,7 @@ header {
     background-image: linear-gradient(to bottom, var(--deep-pool), #00000000);
     padding: 10px;
     padding-bottom: 25px;
-    margin-top: -1px;
+    margin-top: -2px;
     margin-bottom: 30px;
     text-align: center;
     z-index: 1000;
@@ -86,7 +87,7 @@ header nav a {
 }
 
 .parallax__layer--base {
-    top: 150vh;
+    top: 125vh;
     transform: translateZ(0);
 }
 
