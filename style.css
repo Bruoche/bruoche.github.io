@@ -42,7 +42,7 @@ header {
     background-color: white;
     border: solid grey;
     padding: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -104,4 +104,9 @@ header nav a {
 
 .parallax__layer--back {
     transform: translateZ(-1px) scale(2);
+    margin-bottom: 400px;
+}
+
+.part {
+    margin-bottom: 20px;
 }
