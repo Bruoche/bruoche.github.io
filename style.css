@@ -40,6 +40,11 @@ header {
     padding: 40px;
 }
 
+header nav {
+    display: flex;
+    text-align: center;
+}
+
 .content {
     padding: 20px;
     background-color: white;
