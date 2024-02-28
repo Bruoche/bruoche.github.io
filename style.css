@@ -51,6 +51,7 @@ header nav {
 }
 
 header nav a {
+    transform: translateZ(0);
     margin: 20px;
     margin-top: 10px;
 }
