@@ -44,6 +44,7 @@ header {
     padding: 10px;
     margin-bottom: 30px;
     text-align: center;
+    z-index: 1000;
 }
 
 header nav {
@@ -81,7 +82,7 @@ header nav a {
 }
 
 .parallax__layer--base {
-    top: 200vh;
+    top: 150vh;
     transform: translateZ(0);
 }
 
