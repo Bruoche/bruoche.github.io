@@ -8,6 +8,7 @@ html {
 
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+    border: none;
 }
 
 h1 {
@@ -34,13 +35,13 @@ button {
 
 header {
     background-color: white;
-    border: grey;
+    border: solid grey;
 }
 
 .content {
     padding: 20px;
     background-color: white;
-    border: grey;
+    border: solid grey;
 }
 
 .centered {
