@@ -37,12 +37,17 @@ button {
 header {
     background-color: white;
     border: solid grey;
-    padding: 40px;
+    padding: 10px;
+    text-align: center;
 }
 
 header nav {
     display: flex;
-    text-align: center;
+}
+
+header nav a {
+    margin: 20px;
+    margin-top: 10px;
 }
 
 .content {
