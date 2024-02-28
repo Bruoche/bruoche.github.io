@@ -22,6 +22,7 @@ h1 {
 }
 
 h2 {
+    text-indent: 60px;
     font-size: 4rem;
 }
 
@@ -63,7 +64,7 @@ header nav a {
 }
 
 .content {
-    padding: 40px;
+    padding: 80px;
     background-color: white;
 }
 
@@ -117,4 +118,8 @@ header nav a {
 
 .important {
     margin: 250px;
+}
+
+.important button {
+    box-shadow: 5px 10px 10px var(--deep-pool);
 }
