@@ -37,9 +37,12 @@ button {
 }
 
 header {
+    position: sticky;
+    top: 0;
     background-color: white;
     border: solid grey;
     padding: 10px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -100,5 +103,5 @@ header nav a {
 }
 
 .parallax__layer--back {
-    transform: translateZ(-1px);
+    transform: translateZ(-1px) scale(2);
 }
