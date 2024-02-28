@@ -4,11 +4,11 @@ html {
 
 :root {
     --hightlight: #d025ff;
-    --deep-pool: #4e4995;
+    --deep-pool: #383476;
 }
 
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
     font-size: 2rem;
     border: none;
     margin: 0px;
@@ -40,7 +40,6 @@ header {
     position: sticky;
     top: 0;
     background-color: white;
-    border: solid grey;
     padding: 10px;
     margin-bottom: 30px;
     text-align: center;
@@ -61,7 +60,6 @@ header nav a {
 .content {
     padding: 40px;
     background-color: white;
-    border: solid grey;
 }
 
 .centered {
@@ -83,14 +81,14 @@ header nav a {
 }
 
 .parallax__layer--base {
-    top: 150vh;
+    top: 175vh;
     transform: translateZ(0);
 }
 
 .parallax__layer--back {
-    top: 25vh;
     transform: translateZ(-1px) scale(2);
     margin-left: 80px;
+    margin-top: 100px;
     color: white;
 }
 
@@ -103,9 +101,14 @@ header nav a {
     width: 100%;
     margin: 0;
     margin-left: -8px;
-    margin-top: -100px
+    margin-top: -100px;
+    opacity: 0.5;
 }
 
 .part {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.important {
+    margin: 50px;
 }
