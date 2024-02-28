@@ -99,7 +99,7 @@ header nav a {
 }
 
 .parallax__layer--base {
-    top: 550px
+    top: 550px;
     transform: translateZ(0);
 }
 
