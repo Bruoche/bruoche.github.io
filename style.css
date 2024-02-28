@@ -85,7 +85,6 @@ header nav a {
 
 .parallax {
     perspective: 1px;
-    height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -99,14 +98,16 @@ header nav a {
 }
 
 .parallax__layer--base {
-    top: 550px;
+    top: 1000px;
     transform: translateZ(0);
 }
 
 .parallax__layer--back {
-    top: 20px;
+    transform: translateZ(-2px) scale(3);
+}
+
+.parallax__layer--back h1 {
     transform: translateZ(-1px) scale(2);
-    margin-bottom: 400px;
 }
 
 .part {
