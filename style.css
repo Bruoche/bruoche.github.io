@@ -4,12 +4,15 @@ html {
 
 :root {
     --button-color: #aac844;
+    --deep-pool: #4e4995;
 }
 
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+    font-size: 2rem;
     border: none;
     margin: 0px;
+    background-color: var(--deep-pool);
 }
 
 h1 {
@@ -24,7 +27,6 @@ h2 {
 
 p {
     text-indent: 30px;
-    font-size: 2rem;
 }
 
 button {
@@ -68,7 +70,6 @@ header nav a {
     display: block;
     width: 100%;
     margin: 0 auto;
-    max-width: 1020px;
 }
 
 .title_card h1 {
@@ -77,4 +78,27 @@ header nav a {
     top: 0;
     left: 80px;
     color: white;
+}
+
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.parallax__layer--base {
+    transform: translateZ(0);
+}
+
+.parallax__layer--back {
+    transform: translateZ(-1px);
 }
