@@ -42,10 +42,13 @@ header {
     top: 0;
     background-image: linear-gradient(to bottom, var(--deep-pool), #00000000);
     padding: 10px;
+    padding-bottom: 25px;
+    margin-top: -1px;
     margin-bottom: 30px;
     text-align: center;
     z-index: 1000;
     transform: translateZ(0);
+    color: white;
 }
 
 header nav {
@@ -83,7 +86,7 @@ header nav a {
 }
 
 .parallax__layer--base {
-    top: 175vh;
+    top: 150vh;
     transform: translateZ(0);
 }
 
@@ -112,5 +115,5 @@ header nav a {
 }
 
 .important {
-    margin: 50px;
+    margin: 250px;
 }
