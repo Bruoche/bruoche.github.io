@@ -65,10 +65,6 @@ header nav a {
     text-align: center;
 }
 
-.title_card {
-    position: relative;
-}
-
 .parallax {
     perspective: 1px;
     height: 100vh;
@@ -92,6 +88,8 @@ header nav a {
 .parallax__layer--back {
     top: 100vh;
     transform: translateZ(-1px) scale(2);
+    width: 100%;
+    color: white;
 }
 
 .parallax__layer--deep {
