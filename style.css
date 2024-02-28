@@ -118,8 +118,5 @@ header nav a {
 
 .important {
     margin: 250px;
-}
-
-.important button {
     box-shadow: 5px 10px 10px var(--deep-pool);
 }
