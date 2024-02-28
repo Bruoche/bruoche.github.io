@@ -3,7 +3,7 @@ html {
 }
 
 :root {
-    --button-color: #aac844;
+    --hightlight: #d025ff;
     --deep-pool: #4e4995;
 }
 
@@ -30,7 +30,7 @@ p {
 }
 
 button {
-    background-color: var(--button-color);
+    background-color: var(--hightlight);
     border: none;
     border-radius: 5px;
     padding: 10px;
