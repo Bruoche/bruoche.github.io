@@ -69,20 +69,6 @@ header nav a {
     position: relative;
 }
 
-.title_card img {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.title_card h1 {
-    position: absolute;
-    text-align: left;
-    top: 0;
-    left: 80px;
-    color: white;
-}
-
 .parallax {
     perspective: 1px;
     overflow-x: hidden;
@@ -107,6 +93,7 @@ header nav a {
 }
 
 .parallax__layer--back h1 {
+    top: 500px;
     transform: translateZ(-1px) scale(2);
 }
 
