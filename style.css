@@ -13,19 +13,20 @@ body {
 h1 {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     font-weight: normal;
-    font-size: 50em;
+    font-size: 50rem;
 }
 
 h2 {
-    font-size: 30em;
+    font-size: 30rem;
 }
 
 p {
     text-indent: 30px;
-    font-size: 20em;
+    font-size: 20rem;
 }
 
 button {
     background-color: var(--button-color);
     border: none;
+    padding: 10px;
 }
