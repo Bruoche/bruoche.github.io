@@ -99,10 +99,12 @@ header nav a {
 }
 
 .parallax__layer--base {
+    top: 550px
     transform: translateZ(0);
 }
 
 .parallax__layer--back {
+    top: 20px;
     transform: translateZ(-1px) scale(2);
     margin-bottom: 400px;
 }
