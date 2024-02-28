@@ -19,12 +19,12 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 p {
     text-indent: 30px;
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 button {
@@ -37,6 +37,7 @@ button {
 header {
     background-color: white;
     border: solid grey;
+    padding: 40px;
 }
 
 .content {
@@ -61,9 +62,8 @@ header {
 
 .title_card h1 {
     position: absolute;
-    text-align: center;
-    bottom: 0;
+    text-align: left;
+    top: 0;
     left: 0;
-    right: 0;
     color: white;
 }
