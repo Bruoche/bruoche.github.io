@@ -13,16 +13,16 @@ body {
 h1 {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     font-weight: normal;
-    font-size: 50rem;
+    font-size: 20rem;
 }
 
 h2 {
-    font-size: 30rem;
+    font-size: 10rem;
 }
 
 p {
     text-indent: 30px;
-    font-size: 20rem;
+    font-size: 5rem;
 }
 
 button {
