@@ -92,16 +92,18 @@ header nav a {
 }
 
 .parallax__layer--back h1 {
-    margin-right: 80px;
+    margin-left: 80px;
 }
 
 .parallax__layer--deep {
+    left: 0px;
     transform: translateZ(-2px) scale(3);
 }
 
 .parallax__layer--deep img {
     width: 100%;
     margin: 0;
+    margin-left: -8px;
 }
 
 .part {
