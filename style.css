@@ -13,7 +13,7 @@ body {
 h1 {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     font-weight: normal;
-    font-size: 10rem;
+    font-size: 15rem;
 }
 
 h2 {
@@ -38,4 +38,10 @@ button {
 
 .centered{
     text-align: center;
+}
+
+.title_card img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
 }
