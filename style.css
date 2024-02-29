@@ -133,7 +133,7 @@ header .aligned_right {
 }
 
 .part {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .important {
@@ -142,7 +142,7 @@ header .aligned_right {
 }
 
 .download {
-    margin-top: 10px;
+    margin-top: 5px;
     border-radius: 25px;
 }
 
