@@ -40,6 +40,8 @@ button {
 }
 
 header {
+    background-color: white;
+    color: black;
     position: sticky;
     top: 0;
     padding: 10px;
@@ -59,10 +61,11 @@ header nav a {
     margin: 20px;
     margin-top: 10px;
 }
-
 .affix {
-    background: white;
-    color: black;
+    -webkit-transition:padding 0.2s ease-out;
+    -moz-transition:padding 0.2s ease-out;
+    -o-transition:padding 0.2s ease-out;
+    transition:padding 0.2s ease-out;
 }
 
 .affix-top {
