@@ -23,7 +23,7 @@
             </div>
             <div class="title_card parallax__layer parallax__layer--base">
                 
-                <div class="centered">
+                <div class="centered outside_content">
                     <button class="important"><a> Découvrir mes compétences </a></button>
                 </div>
                 
@@ -67,9 +67,10 @@
         <script>
             page = document.querySelector('div');
             header = document.querySelector("header");
+            extraspace = document.querySelector(".outside_content").innerHeight;
             page.addEventListener('scroll', () => {
                 console.log(page.scrollTop);
-                if (page.scrollTop > window.innerHeight) {
+                if (page.scrollTop > (window.innerHeight + extraspace)) {
                     header.classList.add('fixed');
                 } else {
                     header.classList.remove('fixed');
