@@ -74,6 +74,10 @@ header nav a {
     margin-top: 10px;
 }
 
+header .aligned_right {
+    width: 20px;
+}
+
 .content {
     padding: 80px;
     background-color: white;
@@ -137,12 +141,12 @@ header nav a {
 }
 
 .download {
-    border-radius: 15px;
-    max-width: 20%;
+    border-radius: 25px;
 }
 
 .download img {
     border-radius: 20px;
     margin: -5px;
-    margin-left: 20px;
+    margin-left: 15px;
+    margin-bottom: -10px;
 }
