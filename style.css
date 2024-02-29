@@ -130,3 +130,7 @@ header nav a {
     margin: 250px;
     box-shadow: 5px 10px 10px var(--deep-shade);
 }
+
+.icon {
+    border-radius: 25px;
+}
