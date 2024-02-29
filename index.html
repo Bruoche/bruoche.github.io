@@ -69,7 +69,7 @@
             header = document.querySelector("header");
             page.addEventListener('scroll', () => {
                 console.log(page.scrollTop);
-                if (page.scrollTop > 20) {
+                if (page.scrollTop > window.innerHeight) {
                     header.classList.add('fixed');
                 } else {
                     header.classList.remove('fixed');
