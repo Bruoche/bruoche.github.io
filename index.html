@@ -1,4 +1,15 @@
 <!DOCTYPE html>
+<script>
+    $(window).scroll(function(){
+        if($(document).scrollTop() > 20){
+            $('header').addClass('fixed');
+        }else{
+            if($('header').hasClass('fixed')){
+                $('header').removeClass('fixed');
+            }
+        }
+    });
+</script>
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
@@ -8,7 +19,7 @@
             <div class="parallax__layer parallax__layer--deep">
                 <img src="Illfit_cropped.png">
             </div>
-            <header data-spy="affix" data-offset-top="40">
+            <header>
                 <nav>
                     <a>Qui suis-je</a>
                     <a>Mes compétences</a>

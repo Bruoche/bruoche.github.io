@@ -40,16 +40,24 @@ button {
 }
 
 header {
-    background-color: white;
-    color: black;
-    position: sticky;
-    top: 0;
+    background-image: linear-gradient(to bottom, var(--deep-pool), #00000000);
+    margin-bottom: 30px;
+    color: white;
     padding: 10px;
     padding-bottom: 25px;
     margin-top: -2px;
     text-align: center;
-    z-index: 1000;
     transform: translateZ(0);
+}
+
+header.fixed {
+    z-index: 1000;
+    background-color: white;
+    color: black;
+    position: sticky;
+    top: 0;
+    padding-bottom: 10px;
+    box-shadow: 0px 10px 15px var(--deep-pool);
 }
 
 header nav {
@@ -60,18 +68,6 @@ header nav a {
     transform: translateZ(0);
     margin: 20px;
     margin-top: 10px;
-}
-.affix {
-    -webkit-transition:padding 0.2s ease-out;
-    -moz-transition:padding 0.2s ease-out;
-    -o-transition:padding 0.2s ease-out;
-    transition:padding 0.2s ease-out;
-}
-
-.affix-top {
-    background-image: linear-gradient(to bottom, var(--deep-pool), #00000000);
-    margin-bottom: 30px;
-    color: white;
 }
 
 .content {
