@@ -1,15 +1,4 @@
 <!DOCTYPE html>
-<script>
-    $(window).scroll(function(){
-        if($(document).scrollTop() > 20){
-            $('header').addClass('fixed');
-        }else{
-            if($('header').hasClass('fixed')){
-                $('header').removeClass('fixed');
-            }
-        }
-    });
-</script>
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
@@ -75,5 +64,17 @@
                 </div>
             </div>
         </div>
+        <script>
+            page = document.querySelector('div');
+            header = document.querySelector("header");
+            page.addEventListener('scroll', () => {
+                console.log(page.scrollTop);
+                if (page.scrollTop > 20) {
+                    header.classList.add('fixed');
+                } else {
+                    header.classList.remove('fixed');
+                }
+            })
+        </script>
     </body>
 </html>
