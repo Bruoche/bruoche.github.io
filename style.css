@@ -42,15 +42,12 @@ button {
 header {
     position: sticky;
     top: 0;
-    background-image: linear-gradient(to bottom, var(--deep-pool), #00000000);
     padding: 10px;
     padding-bottom: 25px;
     margin-top: -2px;
-    margin-bottom: 30px;
     text-align: center;
     z-index: 1000;
     transform: translateZ(0);
-    color: white;
 }
 
 header nav {
@@ -61,6 +58,17 @@ header nav a {
     transform: translateZ(0);
     margin: 20px;
     margin-top: 10px;
+}
+
+.affix {
+    background: white;
+    color: black;
+}
+
+.affix-top {
+    background-image: linear-gradient(to bottom, var(--deep-pool), #00000000);
+    margin-bottom: 30px;
+    color: white;
 }
 
 .content {
