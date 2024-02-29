@@ -82,6 +82,10 @@ header nav a {
     text-align: center;
 }
 
+.aligned_right {
+    text-align: right;
+}
+
 .parallax {
     perspective: 1px;
     height: 100vh;
