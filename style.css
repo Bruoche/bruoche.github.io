@@ -136,5 +136,6 @@ header nav a {
 }
 
 .icon {
-    border-radius: 25px;
+    border-radius: 5px;
+    margin: 0px;
 }
