@@ -67,10 +67,9 @@
         <script>
             page = document.querySelector('div');
             header = document.querySelector("header");
-            extraspace = document.querySelector(".outside_content").innerHeight;
+            extraspace = document.querySelector(".outside_content").offsetHeight;
             page.addEventListener('scroll', () => {
-                console.log(page.scrollTop);
-                if (page.scrollTop > (window.innerHeight + extraspace)) {
+                if (page.scrollTop > ((window.innerHeight*1.25) + extraspace)) {
                     header.classList.add('fixed');
                 } else {
                     header.classList.remove('fixed');
