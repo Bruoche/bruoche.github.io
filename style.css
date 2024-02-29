@@ -65,7 +65,7 @@ header.fixed {
 
 header nav {
     display: flex;
-    width: 75%;
+    width: 60%;
 }
 
 header nav a {
@@ -138,7 +138,7 @@ header nav a {
 
 .download {
     border-radius: 15px;
-    max-width: 25%;
+    max-width: 20%;
 }
 
 .download img {
