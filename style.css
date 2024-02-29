@@ -65,6 +65,7 @@ header.fixed {
 
 header nav {
     display: flex;
+    width: 75%;
 }
 
 header nav a {
@@ -135,7 +136,12 @@ header nav a {
     box-shadow: 5px 10px 10px var(--deep-shade);
 }
 
-.icon {
-    border-radius: 5px;
+.download {
+    border-radius: 15px;
+    max-width: 25%;
+}
+
+.download img {
+    border-radius: 12px;
     margin: 0px;
 }
