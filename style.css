@@ -92,6 +92,10 @@ header .aligned_right {
     text-align: right;
 }
 
+.row {
+    display: flex;
+}
+
 .parallax {
     perspective: 1px;
     height: 100vh;
