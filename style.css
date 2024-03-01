@@ -63,8 +63,12 @@ header.fixed {
     box-shadow: 0px 10px 15px var(--deep-shade);
 }
 
-header.fixed button {
+header button {
     box-shadow: 5px 10px 10px var(--deep-shade);
+}
+
+header.fixed button {
+    box-shadow: none;
 }
 
 header nav {
@@ -86,6 +90,16 @@ header nav {
     to {background-color: transparent;}
 }
 
+@keyframes shade_hover_nav {
+    from {box-shadow: none;}
+    to {box-shadow: 5px 10px 10px var(--deep-shade);}
+}
+
+@keyframes shade_mouse_left_nav {
+    from {box-shadow: 5px 10px 10px var(--deep-shade);}
+    to {box-shadow: none;}
+}
+
 header nav a {
     transform: translateZ(0);
     margin: -10px;
@@ -96,31 +110,24 @@ header nav a {
     color: white;
     text-decoration: none;
     animation: mouse_left_nav 1s;
+    animation: shade_mouse_left_nav 1s;
 }
 
 header nav a:hover {
     background: var(--highlight);
     color: white;
     animation: hover_nav 0.5s;
-}
-
-@keyframes fixed_hover_nav {
-    from {box-shadow: none;}
-    to {box-shadow: 5px 10px 10px var(--deep-shade);}
-}
-
-@keyframes fixed_mouse_left_nav {
-    from {box-shadow: 5px 10px 10px var(--deep-shade);}
-    to {box-shadow: none;}
+    animation: shade_hover_nav 0.5s;
 }
 
 header.fixed nav a {
     color: black;
-    animation: fixed_mouse_left_nav 1s;
+    animation: shade_mouse_left_nav 0s;
 }
 
 header.fixed nav a:hover {
-    animation: fixed_hover_nav 0.5s;
+    animation: shade_hover_nav 0s;
+    box-shadow: none;
 }
 
 header .aligned_right {
