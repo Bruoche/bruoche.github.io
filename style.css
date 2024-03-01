@@ -80,12 +80,13 @@ header nav {
 
 header nav a {
     transform: translateZ(0);
-    margin: 15px;
-    margin-top: 10px;
-    padding: 10px;
+    margin: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 20px;
+    padding-top: 10px;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
     animation: mouse_left_nav 1s;
 }
 
@@ -171,10 +172,13 @@ header .aligned_right {
 
 .important {
     margin: 250px;
+}
+
+.shaded {
     box-shadow: 5px 10px 10px var(--deep-shade);
 }
 
-.row .important {
+.row button {
     margin: 50px;
 }
 
