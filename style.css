@@ -3,7 +3,7 @@ html {
 }
 
 :root {
-    --hightlight: #d025ff;
+    --highlight: #d025ff;
     --deep-pool: #383476;
     --deep-shade: #2b27605f;
 }
@@ -33,7 +33,7 @@ p {
 }
 
 button {
-    background-color: var(--hightlight);
+    background-color: var(--highlight);
     border: none;
     border-radius: 5px;
     padding: 10px;
@@ -45,7 +45,6 @@ header {
     display: flex;
     background-image: linear-gradient(to bottom, var(--deep-pool), #00000000);
     margin-bottom: 30px;
-    color: white;
     padding: 10px;
     padding-bottom: 25px;
     margin-top: -2px;
@@ -69,10 +68,34 @@ header nav {
     width: 100%;
 }
 
+@keyframes hover_nav {
+    from {background-color: transparent;}
+    to {background-color: var(--highlight);}
+}
+
+@keyframes mouse_left_nav {
+    from {background-color: var(--highlight);}
+    to {background-color: transparent;}
+}
+
 header nav a {
     transform: translateZ(0);
     margin: 20px;
     margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    animation: mouse_left_button;
+}
+
+header nav a:hover {
+    background: var(--highlight);
+    color: white;
+    border-radius: 5px;
+    animation: hover_nav;
+}
+
+header.fixed nav a {
+    color: black;
 }
 
 header .aligned_right {
@@ -94,6 +117,7 @@ header .aligned_right {
 
 .row {
     display: flex;
+    max-width: 100vw;
 }
 
 .parallax {
@@ -143,6 +167,10 @@ header .aligned_right {
 .important {
     margin: 250px;
     box-shadow: 5px 10px 10px var(--deep-shade);
+}
+
+.row .important {
+    margin: 50px;
 }
 
 .download {
