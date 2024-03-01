@@ -80,17 +80,18 @@ header nav {
 
 header nav a {
     transform: translateZ(0);
-    margin: 20px;
+    margin: 15px;
     margin-top: 10px;
+    padding: 10px;
     color: white;
     text-decoration: none;
+    border-radius: 5px;
     animation: mouse_left_nav 1s;
 }
 
 header nav a:hover {
     background: var(--highlight);
     color: white;
-    border-radius: 5px;
     animation: hover_nav 0.5s;
 }
 
@@ -117,8 +118,11 @@ header .aligned_right {
 
 .row {
     display: flex;
-    width: 100%;
     max-width: 100vw;
+}
+
+.row button {
+    flex: 1;
 }
 
 .parallax {
