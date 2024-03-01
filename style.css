@@ -84,14 +84,14 @@ header nav a {
     margin-top: 10px;
     color: white;
     text-decoration: none;
-    animation: mouse_left_button;
+    animation: mouse_left_nav 1s;
 }
 
 header nav a:hover {
     background: var(--highlight);
     color: white;
     border-radius: 5px;
-    animation: hover_nav;
+    animation: hover_nav 0.5s;
 }
 
 header.fixed nav a {
@@ -117,6 +117,7 @@ header .aligned_right {
 
 .row {
     display: flex;
+    width: 100%;
     max-width: 100vw;
 }
 
