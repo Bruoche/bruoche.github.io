@@ -103,8 +103,8 @@ header nav {
 header nav a {
     transform: translateZ(0);
     margin: -10px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
     padding: 30px;
     padding-top: 20px;
     color: white;
