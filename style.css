@@ -47,33 +47,19 @@ button {
 }
 
 @keyframes header_hide {
-    0% {
-        from {
-            background-color: white;
-            color: black;
-            background-image: none;
-            position: sticky;
-            top: 0;
-        }
-        to {
-            background-color: transparent;
-            color: transparent;
-            background-image: none;
-            position:sticky;
-            top: -100px;
-        }
+    from {
+        background-color: white;
+        color: black;
+        background-image: none;
+        position: sticky;
+        top: 0;
     }
-    100% {
-        from {
-            background-color: transparent;
-            color: transparent;
-            background-image: none;
-        }
-        to {
-            background-color: transparent;
-            color: white;
-            background-image: linear-gradient(to bottom, var(--deep-pool), #00000000);
-        }
+    to {
+        background-color: transparent;
+        color: transparent;
+        background-image: none;
+        position:sticky;
+        top: -100px;
     }
 }
 
@@ -86,7 +72,7 @@ header {
     margin-top: -2px;
     text-align: center;
     transform: translateZ(0);
-    animation: header_hide 2s;
+    animation: header_hide 1s;
 }
 
 header.fixed {
