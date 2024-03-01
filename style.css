@@ -109,28 +109,24 @@ header nav a {
     padding-top: 20px;
     color: white;
     text-decoration: none;
-    animation: mouse_left_nav 1s;
-    animation: shade_mouse_left_nav 1s;
+    animation: mouse_left_nav 1s, shade_mouse_left_nav 1s;
 }
 
 header nav a:hover {
     background: var(--highlight);
     color: white;
     box-shadow: 5px 10px 10px var(--deep-shade);
-    animation: hover_nav 0.5s;
-    animation: shade_hover_nav 0.5s;
+    animation: hover_nav 0.5s, shade_hover_nav 0.5s;
 }
 
 header.fixed nav a {
     color: black;
     animation: mouse_left_nav 1s;
-    animation: shade_mouse_left_nav 0s;
 }
 
 header.fixed nav a:hover {
     box-shadow: none;
     animation: hover_nav 0.5s;
-    animation: shade_hover_nav 0s;
 }
 
 header .aligned_right {
