@@ -41,6 +41,11 @@ button {
     color: white;
 }
 
+button a {
+    color: white;
+    text-decoration: none;
+}
+
 @keyframes header_pop {
     from {top: -100px;}
     to {top: 0px;}
@@ -285,4 +290,11 @@ header .aligned_right {
     margin: -5px;
     margin-left: 10px;
     margin-bottom: -8px;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
 }
