@@ -63,6 +63,28 @@ button {
     }
 }
 
+@keyframes header_nav_hide {
+    from {
+        color: black;
+        box-shadow: none;
+    }
+    to {
+        color: transparent;
+        box-shadow: none;
+    }
+}
+
+@keyframes header_button_hide {
+    from {
+        opacity: 100%;
+        box-shadow: none;
+    }
+    to {
+        opacity: 100%;
+        box-shadow: none;
+    }
+}
+
 header {
     display: flex;
     background-image: linear-gradient(to bottom, var(--deep-pool), #00000000);
@@ -98,6 +120,10 @@ header.fixed button {
 header nav {
     display: flex;
     width: 100%;
+}
+
+header.fixed nav {
+    animation: header_nav_hide 1s;
 }
 
 @keyframes hover_nav {
