@@ -25,18 +25,16 @@
             </div>
             <div class="parallax__layer parallax__layer--base">
                 
-                <div class="centered outside_content">
-                    <div class="important">
-                        <div class="row">
-                            <button class="shaded"><a> Réaliser </a></button>
-                            <button class="shaded"><a> Optimiser </a></button>
-                            <button class="shaded"><a> Administrer </a></button>
-                        </div>
-                        <div class="row">
-                            <button class="shaded"><a> Gérer </a></button>
-                            <button class="shaded"><a> Conduire </a></button>
-                            <button class="shaded"><a> Collaborer </a></button>
-                        </div>
+                <div class="important centered outside_content">
+                    <div class="row">
+                        <button class="shaded"><a> Réaliser </a></button>
+                        <button class="shaded"><a> Optimiser </a></button>
+                        <button class="shaded"><a> Administrer </a></button>
+                    </div>
+                    <div class="row">
+                        <button class="shaded"><a> Gérer </a></button>
+                        <button class="shaded"><a> Conduire </a></button>
+                        <button class="shaded"><a> Collaborer </a></button>
                     </div>
                 </div>
                 
@@ -80,7 +78,10 @@
         <script>
             page = document.querySelector('div');
             header = document.querySelector("header");
-            extraspace = document.querySelector(".outside_content").offsetHeight;
+            outside_content = document.querySelector(".outside_content");
+            outside_content_style = window.getComputedStyles(outside_content);
+            outside_content_margin = parseFloat(outside_content_style['marginBottom']) + parseFloat(outside_content_style['marginTop']);
+            extraspace = outside_content.offsetHeight + outside_content_margin
             page.addEventListener('scroll', () => {
                 if (page.scrollTop > ((window.innerHeight*1.25) + extraspace)) {
                     header.classList.add('fixed');
