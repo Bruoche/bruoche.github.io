@@ -57,7 +57,7 @@ button {
     50% {
         background-color: transparent;
         color: transparent;
-        background-image: none;
+        background-image: linear-gradient(to bottom, #00000000, #00000000);;
         position:sticky;
         top: -100px;
     }
@@ -83,7 +83,7 @@ button {
 
 @keyframes header_button_hide {
     from {
-        opacity: 100%;
+        opacity: 1;
         box-shadow: none;
     }
     50% {
@@ -91,7 +91,7 @@ button {
         box-shadow: none;
     }
     to {
-        opacity: 100%;
+        opacity: 1;
         box-shadow: 5px 10px 10px var(--deep-shade);;
     }
 }
@@ -151,6 +151,7 @@ header button {
 
 header.fixed button {
     box-shadow: none;
+    animation: none;
 }
 
 header nav {
