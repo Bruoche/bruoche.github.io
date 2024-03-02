@@ -79,7 +79,7 @@
             page = document.querySelector('div');
             header = document.querySelector("header");
             outside_content = document.querySelector(".outside_content");
-            outside_content_style = window.getComputedStyles(outside_content);
+            outside_content_style = window.getComputedStyle(outside_content);
             outside_content_margin = parseFloat(outside_content_style['marginBottom']) + parseFloat(outside_content_style['marginTop']);
             extraspace = outside_content.offsetHeight + outside_content_margin
             page.addEventListener('scroll', () => {
