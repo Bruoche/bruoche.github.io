@@ -48,6 +48,7 @@ button {
 
 @keyframes header_hide {
     0% {
+        opacity: 1;
         background-color: white;
         color: black;
         background-image: none;
@@ -55,14 +56,15 @@ button {
         top: 0;
     }
     50% {
+        opacity: 0;
         background-color: transparent;
         color: transparent;
-        background-image: linear-gradient(to bottom, #00000000, #00000000);;
+        background-image: linear-gradient(to bottom, var(--deep-pool), #00000000);
         position:sticky;
         top: -100px;
     }
     100% {
-        background-image: linear-gradient(to bottom, var(--deep-pool), #00000000);
+        opacity: 1;
         color: white;
     }
 }
