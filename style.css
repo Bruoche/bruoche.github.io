@@ -115,6 +115,7 @@ header button {
 
 header.fixed button {
     box-shadow: none;
+    animation: header_button_hide 1s;
 }
 
 header nav {
@@ -122,7 +123,7 @@ header nav {
     width: 100%;
 }
 
-header.fixed nav {
+header.fixed nav a {
     animation: header_nav_hide 1s;
 }
 
