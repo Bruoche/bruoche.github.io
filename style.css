@@ -48,30 +48,22 @@ button {
 
 @keyframes header_hide {
     0% {
-        from {
-            background-color: white;
-            color: black;
-            background-image: none;
-            position: sticky;
-            top: 0;
-        }
-        to {
-            background-color: transparent;
-            color: transparent;
-            background-image: none;
-            position:sticky;
-            top: -100px;
-        }
+        background-color: white;
+        color: black;
+        background-image: none;
+        position: sticky;
+        top: 0;
+    }
+    50% {
+        background-color: transparent;
+        color: transparent;
+        background-image: none;
+        position:sticky;
+        top: -100px;
     }
     100% {
-        from {
-            background-image: none;
-            color: transparent;
-        }
-        to {
-            background-image: linear-gradient(to bottom, var(--deep-pool), #00000000);
-            color: white;
-        }
+        background-image: linear-gradient(to bottom, var(--deep-pool), #00000000);
+        color: white;
     }
 }
 
