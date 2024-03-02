@@ -85,6 +85,30 @@ button {
     }
 }
 
+@keyframes hover_nav {
+    from {background-color: transparent;}
+    to {
+        background-color: var(--highlight);
+    }
+}
+
+@keyframes mouse_left_nav {
+    from {
+        background-color: var(--highlight);
+    }
+    to {background-color: transparent;}
+}
+
+@keyframes shade_hover_nav {
+    from {box-shadow: none;}
+    to {box-shadow: 5px 10px 10px var(--deep-shade);}
+}
+
+@keyframes shade_mouse_left_nav {
+    from {box-shadow: 5px 10px 10px var(--deep-shade);}
+    to {box-shadow: none;}
+}
+
 header {
     display: flex;
     background-image: linear-gradient(to bottom, var(--deep-pool), #00000000);
@@ -111,44 +135,16 @@ header.fixed {
 
 header button {
     box-shadow: 5px 10px 10px var(--deep-shade);
+    animation: header_button_hide 1s;
 }
 
 header.fixed button {
     box-shadow: none;
-    animation: header_button_hide 1s;
 }
 
 header nav {
     display: flex;
     width: 100%;
-}
-
-header.fixed nav a {
-    animation: header_nav_hide 1s;
-}
-
-@keyframes hover_nav {
-    from {background-color: transparent;}
-    to {
-        background-color: var(--highlight);
-    }
-}
-
-@keyframes mouse_left_nav {
-    from {
-        background-color: var(--highlight);
-    }
-    to {background-color: transparent;}
-}
-
-@keyframes shade_hover_nav {
-    from {box-shadow: none;}
-    to {box-shadow: 5px 10px 10px var(--deep-shade);}
-}
-
-@keyframes shade_mouse_left_nav {
-    from {box-shadow: 5px 10px 10px var(--deep-shade);}
-    to {box-shadow: none;}
 }
 
 header nav a {
@@ -160,7 +156,7 @@ header nav a {
     padding-top: 20px;
     color: white;
     text-decoration: none;
-    animation: mouse_left_nav 1s, shade_mouse_left_nav 1s;
+    animation: mouse_left_nav 1s, shade_mouse_left_nav 1s, header_nav_hide 1s;
 }
 
 header nav a:hover {
