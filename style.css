@@ -68,14 +68,6 @@ button a {
     }
 }
 
-button:hover {
-    animation: button_hovered 1s;
-}
-
-button:not:hover {
-    animation: button_mouse_left 1s;
-}
-
 @keyframes header_pop {
     from {top: -100px;}
     to {top: 0px;}
@@ -189,6 +181,16 @@ header button {
 header.fixed button {
     box-shadow: none;
     animation: none;
+}
+
+button:hover {
+    scale: 1.25;
+    opacity: 0.75;
+    animation: button_hovered 1s;
+}
+
+button:not(:hover) {
+    animation: button_mouse_left 1s;
 }
 
 header nav {
