@@ -186,7 +186,7 @@ header.fixed button {
 button:hover {
     scale: 1.25;
     opacity: 0.75;
-    animation: button_hovered 1s;
+    animation: button_hovered 0.5s;
 }
 
 button:not(:hover) {
@@ -207,7 +207,7 @@ header nav a {
     padding-top: 20px;
     color: white;
     text-decoration: none;
-    animation: mouse_left_nav 1s, shade_mouse_left_nav 1s, header_nav_hide 1.5s;
+    animation: header_nav_hide 1.5s;
 }
 
 header nav a:hover {
@@ -215,6 +215,10 @@ header nav a:hover {
     color: white;
     box-shadow: 5px 10px 10px var(--deep-shade);
     animation: hover_nav 0.5s, shade_hover_nav 0.5s;
+}
+
+header nav a:not(:hover) {
+    animation: mouse_left_nav 1s, shade_mouse_left_nav 1s;
 }
 
 header.fixed nav a {
