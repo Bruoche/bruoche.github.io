@@ -27,14 +27,14 @@
                 
                 <div class="important centered outside_content">
                     <div class="row">
-                        <button class="shaded" onclick="goTo('#realise');"> Réaliser </button>
-                        <button class="shaded" onclick="goTo('#optimise');"> Optimiser </button>
-                        <button class="shaded" onclick="goTo('#administer');"> Administrer </button>
+                        <button class="shaded" onclick="go_to('#realise');"> Réaliser </button>
+                        <button class="shaded" onclick="go_to('#optimise');"> Optimiser </button>
+                        <button class="shaded" onclick="go_to('#administer');"> Administrer </button>
                     </div>
                     <div class="row">
-                        <button class="shaded" onclick="goTo('#manage');"> Gérer </button>
-                        <button class="shaded" onclick="goTo('#conduct');"> Conduire </button>
-                        <button class="shaded" onclick="goTo('#collaborate');"> Collaborer </button>
+                        <button class="shaded" onclick="go_to('#manage');"> Gérer </button>
+                        <button class="shaded" onclick="go_to('#conduct');"> Conduire </button>
+                        <button class="shaded" onclick="go_to('#collaborate');"> Collaborer </button>
                     </div>
                 </div>
                 
@@ -107,7 +107,6 @@
                 if (page.scrollTop > ((window.innerHeight*1.25) + extraspace)) {
                     header.classList.add('fixed');
                 } else {
-                    header.style.animation('header_hide 1.5s');
                     header.classList.remove('fixed');
                     header.add("nav > a").add('hiding');
                     setTimeout(() => {header.remove('hiding')}, 1500)
