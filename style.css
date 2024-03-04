@@ -208,9 +208,6 @@ header nav a {
     padding-top: 20px;
     color: white;
     text-decoration: none;
-}
-
-header nav a.mouse_left {
     animation: mouse_left_nav 1s, shade_mouse_left_nav 1s;
 }
 

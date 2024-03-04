@@ -114,13 +114,6 @@
                     }
                 }
             })
-
-            nav_link = header.querySelector('nav > a')
-            nav_link.addEventListener("mouseleave", (e) => {
-                nav_link.classList.add('mouse_left');
-                setTimeout(() => {header.classList.remove('mouse_left')}, 1000);
-            });
-
             function go_to(anchor) {
                 document.querySelector(anchor).scrollIntoView({behavior: 'smooth'});
             }
