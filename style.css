@@ -398,17 +398,19 @@ header .aligned_right {
     padding-left: 10px;
     width: 100%;
     background-image: linear-gradient(to top, var(--deep-pool), #00000000);
+    margin: 0;
 }
 
 .description {
+
     overflow-y: auto;
     overflow-x: hidden;
 }
 
-.description h3 {
+.card h3 {
     font-size: 2rem;
 }
 
 .description p {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
