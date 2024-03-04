@@ -47,12 +47,12 @@ a {
     color: var(--highlight);
 }
 
-a:hover {
-    color: var(--bright-highlight);
-}
-
 a:visited {
     color: var(--read-link);
+}
+
+a:hover {
+    color: var(--bright-highlight);
 }
 
 button a {
