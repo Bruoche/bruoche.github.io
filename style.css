@@ -380,6 +380,9 @@ header .aligned_right {
     background-color: var(--deep-pool);
     color: white;
     border-radius: 15px;
+    width: 70px;
+    padding: 10px;
+    max-height: 100px;
 }
 
 .card_illu {
@@ -393,4 +396,9 @@ header .aligned_right {
     padding-bottom: 5px;
     padding-left: 10px;
     background-image: linear-gradient(to top, var(--deep-pool), #00000000);
+}
+
+.description {
+    overflow-y: auto;
+    overflow-x: hidden;
 }
