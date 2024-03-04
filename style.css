@@ -106,6 +106,28 @@ button a {
     }
 }
 
+@keyframes clickable_hovered {
+    from {
+        scale: 1;
+        opacity: 1;
+    }
+    to {
+        scale: 1.12;
+        opacity: 0.9;
+    }
+}
+
+@keyframes clickable_mouse_left {
+    from {
+        scale: 1.12;
+        opacity: 0.9;
+    }
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
 @keyframes header_pop {
     from {top: -100px;}
     to {top: 0px;}
@@ -221,14 +243,24 @@ header.fixed button {
     animation: none;
 }
 
-button:hover, header.fixed button:hover, .link_icon:hover, .clickable:hover {
+button:hover, header.fixed button:hover, .link_icon:hover {
     scale: 1.25;
     opacity: 0.75;
     animation: button_hovered 0.5s;
 }
 
-button:not(:hover), header.fixed button:not(:hover), .link_icon:not(:hover), .clickable:not(:hover) {
+button:not(:hover), header.fixed button:not(:hover), .link_icon:not(:hover) {
     animation: button_mouse_left 1s;
+}
+
+.clickable:hover {
+    scale: 1.12;
+    opacity: 0.9;
+    animation: clickable_hovered 0.25s;
+}
+
+.clickable:not(:hover) {
+    animation: clickable_mouse_left 0.25s;
 }
 
 header nav {
