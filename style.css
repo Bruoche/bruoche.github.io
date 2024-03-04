@@ -442,6 +442,7 @@ header .aligned_right {
     height: 280px;
     overflow-y: auto;
     overflow-x: hidden;
+    text-decoration: none;
 }
 
 .card h3 {
