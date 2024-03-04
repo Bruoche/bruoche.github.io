@@ -312,6 +312,8 @@ header .aligned_right {
 }
 
 .parallax__layer--base {
+    width: 100vw;
+    overflow-x: hidden;
     top: 125vh;
     transform: translateZ(0);
 }
@@ -324,6 +326,8 @@ header .aligned_right {
 }
 
 .parallax__layer--deep {
+    width: 100vw;
+    overflow-x: hidden;
     left: 0px;
     transform: translateZ(-2px) scale(3);
 }
