@@ -445,11 +445,12 @@ header .aligned_right {
     text-decoration: none;
 }
 
-.card h3 {
+.card .title {
     font-size: 2rem;
 }
 
 .description p {
     font-size: 1.5rem;
     text-align: left;
+    text-decoration: none;
 }
