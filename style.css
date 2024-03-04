@@ -221,13 +221,13 @@ header.fixed button {
     animation: none;
 }
 
-button:hover, header.fixed button:hover, .link_icon:hover {
+button:hover, header.fixed button:hover, .link_icon:hover, .clickable:hover {
     scale: 1.25;
     opacity: 0.75;
     animation: button_hovered 0.5s;
 }
 
-button:not(:hover), header.fixed button:not(:hover) .link_icon:not(:hover) {
+button:not(:hover), header.fixed button:not(:hover), .link_icon:not(:hover), .clickable:not(:hover) {
     animation: button_mouse_left 1s;
 }
 
@@ -374,4 +374,23 @@ header .aligned_right {
     position: relative;
     top: -100px;
     visibility: hidden;
+}
+
+.card {
+    background-color: var(--deep-pool);
+    color: white;
+    border-radius: 15px;
+}
+
+.card_illu {
+    position: relative;
+}
+
+.card_illu h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    background-image: linear-gradient(to top, var(--deep-pool), #00000000);
 }
