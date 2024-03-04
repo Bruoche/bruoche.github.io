@@ -107,9 +107,11 @@
                 if (page.scrollTop > ((window.innerHeight*1.25) + extraspace)) {
                     header.classList.add('fixed');
                 } else {
-                    header.classList.remove('fixed');
-                    header.classList.add('hiding');
-                    setTimeout(() => {header.classList.remove('hiding')}, 1500)
+                    if (header.classList.contains('fixed')) {
+                        header.classList.remove('fixed');
+                        header.classList.add('hiding');
+                        setTimeout(() => {header.classList.remove('hiding')}, 1500);
+                    }
                 }
             })
 
