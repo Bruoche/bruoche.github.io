@@ -409,13 +409,17 @@ header .aligned_right {
 }
 
 .card {
+    display: block;
     background-color: var(--deep-pool);
     color: white;
     border-radius: 15px;
-    width: 200px;
+    width: 250px;
     margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 25px;
     max-height: 500px;
+    text-decoration: none;
 }
 
 .card_illu {
