@@ -108,8 +108,8 @@
                     header.classList.add('fixed');
                 } else {
                     header.classList.remove('fixed');
-                    header.add("nav > a").add('hiding');
-                    setTimeout(() => {header.remove('hiding')}, 1500)
+                    header.classList.add('hiding');
+                    setTimeout(() => {header.classList.remove('hiding')}, 1500)
                 }
             })
 
