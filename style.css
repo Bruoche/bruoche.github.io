@@ -324,13 +324,13 @@ header .aligned_right {
 }
 
 .parallax__layer--deep {
-    width: 100vw;
-    overflow-x: hidden;
     left: 0px;
     transform: translateZ(-2px) scale(3);
 }
 
 .parallax__layer--deep img {
+    width: 100vw;
+    overflow-x: hidden;
     width: 100%;
     margin: 0;
     margin-left: -8px;
