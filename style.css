@@ -409,7 +409,7 @@ header .aligned_right {
 }
 
 .card {
-    display: block;
+    display: inline-block;
     background-color: var(--deep-pool);
     color: white;
     border-radius: 15px;
@@ -425,6 +425,11 @@ header .aligned_right {
 .card_illu {
     position: relative;
     margin-bottom: 10px;
+}
+
+.card_illu {
+    max-height: 150px;
+    max-width: 200px;
 }
 
 .card_illu .title {
