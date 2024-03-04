@@ -380,25 +380,35 @@ header .aligned_right {
     background-color: var(--deep-pool);
     color: white;
     border-radius: 15px;
-    width: 70px;
-    padding: 10px;
-    max-height: 100px;
+    width: 200px;
+    padding: 25px;
+    max-height: 500px;
 }
 
 .card_illu {
     position: relative;
+    margin-bottom: 10px;
 }
 
 .card_illu h3 {
     position: absolute;
     bottom: 0;
     left: 0;
-    padding-bottom: 5px;
+    padding: 5px;
     padding-left: 10px;
+    width: 100%;
     background-image: linear-gradient(to top, var(--deep-pool), #00000000);
 }
 
 .description {
     overflow-y: auto;
     overflow-x: hidden;
+}
+
+.description h3 {
+    font-size: 2rem;
+}
+
+.description p {
+    font-size: 1rem;
 }
