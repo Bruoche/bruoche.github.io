@@ -70,12 +70,19 @@
         <script>
             page = document.querySelector('div');
             header = document.querySelector("header");
-            extraspace = document.querySelector(".outside_content").offsetHeight;
+            outside_content = document.querySelector(".outside_content");
+            outside_content_style = window.getComputedStyle(outside_content);
+            outside_content_margin = parseFloat(outside_content_style['marginBottom']) + parseFloat(outside_content_style['marginTop']);
+            extraspace = outside_content.offsetHeight + outside_content_margin
             page.addEventListener('scroll', () => {
                 if (page.scrollTop > ((window.innerHeight*1.25) + extraspace)) {
                     header.classList.add('fixed');
                 } else {
-                    header.classList.remove('fixed');
+                    if (header.classList.contains('fixed')) {
+                        header.classList.remove('fixed');
+                        header.classList.add('hiding');
+                        setTimeout(() => {header.classList.remove('hiding')}, 1500);
+                    }
                 }
             })
         </script>

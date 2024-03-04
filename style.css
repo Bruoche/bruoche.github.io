@@ -46,6 +46,10 @@ button a {
     text-decoration: none;
 }
 
+::-webkit-scrollbar-track {
+    
+}
+
 @keyframes button_hovered {
     from {
         scale: 1;
