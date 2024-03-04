@@ -183,13 +183,13 @@ header.fixed button {
     animation: none;
 }
 
-button:hover {
+button:hover, header.fixed button:hover {
     scale: 1.25;
     opacity: 0.75;
     animation: button_hovered 0.5s;
 }
 
-button:not(:hover) {
+button:not(:hover), header.fixed button:not(:hover) {
     animation: button_mouse_left 1s;
 }
 
