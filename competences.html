@@ -27,14 +27,14 @@
                 
                 <div class="important centered outside_content">
                     <div class="row">
-                        <button class="shaded" onclick="window.location.href='#realise';"> Réaliser </button>
-                        <button class="shaded" onclick="window.location.href='#optimise';"> Optimiser </button>
-                        <button class="shaded" onclick="window.location.href='#administer';"> Administrer </button>
+                        <button class="shaded" onclick="goTo('#realise');"> Réaliser </button>
+                        <button class="shaded" onclick="goTo('#optimise');"> Optimiser </button>
+                        <button class="shaded" onclick="goTo('#administer');"> Administrer </button>
                     </div>
                     <div class="row">
-                        <button class="shaded" onclick="window.location.href='#manage';"> Gérer </button>
-                        <button class="shaded" onclick="window.location.href='#conduct';"> Conduire </button>
-                        <button class="shaded" onclick="window.location.href='#collaborate';"> Collaborer </button>
+                        <button class="shaded" onclick="goTo('#manage');"> Gérer </button>
+                        <button class="shaded" onclick="goTo('#conduct');"> Conduire </button>
+                        <button class="shaded" onclick="goTo('#collaborate');"> Collaborer </button>
                     </div>
                 </div>
                 
@@ -108,19 +108,15 @@
                     header.classList.add('fixed');
                 } else {
                     header.style.animation('header_hide 1.5s');
-                    header.querySelector("nav > a").style.animation('header_nav_hide 1.5s');
                     header.classList.remove('fixed');
+                    header.add("nav > a").add('hiding');
+                    setTimeout(() => {header.remove('hiding')}, 1500)
                 }
             })
 
-            document.querySelectorAll('[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
+            function go_to(anchor) {
+                document.querySelector(anchor).scrollIntoView({behavior: 'smooth'});
+            }
         </script>
     </body>
 </html>

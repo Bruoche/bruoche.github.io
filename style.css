@@ -211,6 +211,9 @@ header nav a {
     padding-top: 20px;
     color: white;
     text-decoration: none;
+}
+
+header.hiding nav a {
     animation: header_nav_hide 1.5s;
 }
 
