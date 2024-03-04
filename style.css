@@ -4,6 +4,8 @@ html {
 
 :root {
     --highlight: #d025ff;
+    --bright-highlight: #f954ff;
+    --read-link : #a130d2;
     --deep-pool: #383476;
     --deep-shade: #2b27605f;
 }
@@ -39,6 +41,14 @@ button {
     padding: 10px;
     font-size: 2rem;
     color: white;
+}
+
+a {
+    color: var(--highlight);
+}
+
+a:hover {
+    color: 
 }
 
 button a {
