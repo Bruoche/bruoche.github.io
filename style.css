@@ -427,7 +427,7 @@ header .aligned_right {
     margin-bottom: 10px;
 }
 
-.card_illu h3 {
+.card_illu .title {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -445,7 +445,7 @@ header .aligned_right {
     text-decoration: none;
 }
 
-.card .title {
+.card h3 {
     font-size: 2rem;
 }
 
