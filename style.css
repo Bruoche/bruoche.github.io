@@ -427,7 +427,7 @@ header .aligned_right {
     margin-bottom: 10px;
 }
 
-.card_illu {
+.card_illu img {
     max-height: 150px;
     max-width: 200px;
 }
