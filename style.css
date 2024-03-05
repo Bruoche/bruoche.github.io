@@ -416,7 +416,7 @@ header .aligned_right {
     width: 250px;
     margin: 50px;
     padding: 25px;
-    max-height: 500px;
+    max-height: 400px;
     text-decoration: none;
 }
 
@@ -444,7 +444,7 @@ header .aligned_right {
 }
 
 .description {
-    height: 280px;
+    height: 180px;
     overflow-y: auto;
     overflow-x: hidden;
     text-decoration: none;
