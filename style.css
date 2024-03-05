@@ -428,6 +428,7 @@ header .aligned_right {
 .card_illu img {
     max-height: 150px;
     max-width: 200px;
+    opacity: 90%;
 }
 
 .card_illu .title {
