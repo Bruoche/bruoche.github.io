@@ -423,6 +423,7 @@ header .aligned_right {
 .card_illu {
     position: relative;
     margin-bottom: 10px;
+    height: 150px;
 }
 
 .card_illu img {
